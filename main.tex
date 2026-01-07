@@ -1,134 +1,112 @@
 \documentclass[10pt]{extarticle}
 \usepackage{apMod}
-% Licensed: https://www.gnu.org/licenses/gpl-3.0.html
-% Template author: Anindya Prithvi
-% define all your stuff here
-\newcommand{\yourname}{Mikasa Ackerman}%
-\newcommand{\youremail}{mikasaa@iiitd.ac.in}%
-\newcommand{\youraddress}{Address: F-16, Shiganshina District, near Big Tree\\Wall Maria, Paradise Island}%
-\newcommand{\yourrollno}{2020024}%
-\newcommand{\yourDOB}{18 January, 2003}%
-\newcommand{\yourgithub}{https://github.com/Anindya-Prithvi}%
-\newcommand{\yourphoto}{myphoto}% Only the filname without extension
 
-\newcommand{\yourlieinapril}{Shigatsu wa kimi no uso}%lol
+% =======================
+% Personal Details
+% =======================
+\newcommand{\yourname}{Nikhil Singhal}%
+\newcommand{\youremail}{nikhil24384@iiitd.ac.in}%
+\newcommand{\youraddress}{Indraprastha Institute of Information Technology, Delhi}%
+\newcommand{\yourrollno}{2024384}%
+\newcommand{\yourDOB}{}%
+\newcommand{\yourgithub}{https://github.com/}%
+\newcommand{\yourphoto}{} % No photo
 
-\newcommand{\contain}{0}%1 if you make each section of your resume inseperable (try and see) This was added to deal with newpage within section
+\newcommand{\contain}{0}
 
 \begin{document}
 \cvheader%
-%
+
+% =======================
+% Education
+% =======================
 \begin{contained}
 \sectionC{Education}
 \begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    \cveducationitem{Indraprastha Institute of Information Technology, Delhi}{B.Tech (CSE)}{2020 - present}{CGPA: 10.1\newline(Till 4\textsuperscript{th} semester)}
-    \cveducationitem{Trost District High School}{CBSE, Standard 12, PCM+CS}{2018-2020}{Percentage : 99.8\%}
-    \cveducationitem{Shiganshina International School}{CBSE, Standard 10}{2017 - 2018}{Percentage : 99.98\%}
-\end{longtable}%
-\vspace{0pt}
+    \cveducationitem
+    {Indraprastha Institute of Information Technology, Delhi}
+    {B.Tech in Computer Science and Engineering}
+    {2024 -- 2028}
+    {Currently in 2\textsuperscript{nd} Year}
+
+    \cveducationitem
+    {The Cambridge International School}
+    {Class XII (CBSE)}
+    {Percentage: 93\%}
+\end{longtable}
 \end{contained}
-%
+
+% =======================
+% Skills
+% =======================
 \begin{contained}
 \sectionC{Skills}
-%nothing to modularize here, just write your stuff
-\begin{longtable}{p{0.2\textwidth}p{0.75\textwidth}p{0.05\textwidth}}
-    \textbf{Expertise Area:}&
-    Colonel Development, Object Oriented Programming, Statistical Machine Learning, \LaTeX\\
-    \textbf{Programming \newline Languages:}&
-    Python, C++, Nim, Haskell, Jabbascript, Bhailang, Insomnia, oOo code\\
-    \textbf{Tools and\newline Technologies:}&
-    Git, GitHub, Github Actions, Ethereum VM, Web3.js/py, Ganache, Brownie, Shells
-    (ZSH, Bash), Android Studio, IntelliJ IDEA, PyCharm, PyTorch, VSCode,
-    Coppelia Sim, Overleaf, Heroku, JavaFX, Angular, Google Collab, Kaggle\\
-    \textbf{Technical Electives:}&
-    Grape Theory, Statistical Machine Earning, Not Practical Bioinformatics, Singles and Systems, Computer Disassembly
-\end{longtable}%
-\vspace{0pt}
+\begin{longtable}{p{0.25\textwidth}p{0.7\textwidth}p{0.05\textwidth}}
+    \textbf{Programming Languages:} &
+    C++, Python, C, Java \\
+
+    \textbf{Core CS Subjects:} &
+    Data Structures and Algorithms, Operating Systems \\
+
+    \textbf{Problem Solving:} &
+    Solved 250+ Data Structures and Algorithms problems on LeetCode \\
+
+    \textbf{Tools \& Platforms:} &
+    Git, GitHub, Linux, VS Code
+\end{longtable}
 \end{contained}
-%
-\begin{contained}
-\sectionC{Work Experience}
-%nothing to modularize here, just write your stuff
-\begingroup%
-% \renewcommand\arraystretch{1}%
-\begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    \textbf{Recapture Wall Maria, Eldia United}
-    \newline{Advisor: Dr. Erwin Smith, Taicho}
-    \newline%
-    We were tasked with detaining Reiner, a marleyan warrior. We could not do it, however Armin succeeded in his plan. Armin is now the Colossal Titan. Moye moye.&(Jun, 21 - Jul, 22)\\
-    \textbf{Stop the Rumbling}
-    \newline{Advisor: Armin Arlert, Jean, Connie}
-    \newline%
-    Played a key role in the fight against Eren Yeager and his rumbling, which threatened to destroy the world. Put an end to the rumbling and saved the world from destruction (20\%).&(Nov, 23 - Dec, 23)\\
-\end{longtable}%
-\endgroup%
-\end{contained}
-\vspace{0pt}
+
+% =======================
+% Projects
+% =======================
 \begin{contained}
 \sectionC{Projects}
-% \vspace{-10pt}%
-%nothing to modularize here, just write your stuff
-%might add a row with \newline for techstack, but it seems pretty useless lol
 \begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    \textbf{Marked Money – Decentralized App}\newline
-    A fully functional blockchain solution for everyday transactions
-    involving low-trust intermediaries. Relies on EVM and solidity (smart contract).
-    Instance deployed \href{https://moyemoye/}{here}.
-    &Team Size-4
-    \newline (Dec, 21 – Jan, 22)\\
-    \textbf{Will Hero – GUI game}\newline
-    A tap-to-play single player game in JAVA using JavaFX. Uses various
-    concepts of Multithreading and self-designed 2D physics engine. Repository \href{https://github.com/vibsterD/CSE201-AP-Project}{here}.
-    &Team Size-2
-    \newline (Oct, 21 - Jan, 22)\\
-    \textbf{Evaluation of RdRp in SARSCOV2 as a drug target}\newline
-    An EDA+molecular docking of RdRp based on previous literary works. Used
-    bioinformatics tools for molecular docking (autodock) and protein/nucleotide
-    alignment. Final report \href{https://anindya-prithvi.github.io/filehost/PB_Project.pdf}{here}.
-    &Team Size-6
-    \newline (March, 22 - May, 22)\\
-    \textbf{Analyzing generative capabilities of Convolutional Autoencoders}\newline
-    Analysis of the latent space of a trained network (on MNIST digits dataset). Obtained MLE estimates of all classes in the latent space with successful reconstruction (which might fool human discriminators). Repository \href{https://github.com/Anindya-Prithvi/MNIST_CAELatentSpace}{here}.
-    &Individual
-    \newline (May, 22 - Present)\\
+
+    \textbf{Enterprise Resource Planning (ERP) System} \newline
+    Designed and developed a centralized ERP system to manage academic and administrative workflows.
+    Implemented modules for data handling, user access control, and system scalability.
+    &
+    Individual Project \\
+
+    \textbf{AI-Powered JEE Practice and Analytics Platform} \newline
+    Built an AI-driven application to help JEE aspirants practice effectively.
+    The system tracks student mistakes, analyzes concept-level weaknesses, and provides
+    personalized question recommendations based on performance trends.
+    &
+    Individual Project \\
+
 \end{longtable}
 \end{contained}
-\vspace{0pt}
+
+% =======================
+% Achievements
+% =======================
 \begin{contained}
-\sectionC{Positions of Responsibility}
-% \vspace{-10pt}
-\begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    Squad Coleader with Hange san & (Jan,21 – Jan,22)\\
-    Member @ Historia Club & (Jul,21 - Oct,21)\\
-    Core Member @ Jeagerists & (Jan,22 - Present)\\
-\end{longtable}
-\vspace{0pt}
+\sectionC{Achievements}
+\begin{itemize}
+    \setlength\itemsep{2pt}
+    \item Solved 250+ problems on LeetCode across arrays, trees, graphs, DP, and greedy techniques.
+    \item Strong foundation in Operating Systems with practical understanding of processes, memory management, and scheduling.
+\end{itemize}
 \end{contained}
+
+% =======================
+% Interests
+% =======================
 \begin{contained}
-\sectionC{Awards and Achievements}
-\vspace{0pt}
+\sectionC{Interests}
 \begin{itemize}
-\vspace{-8pt}
-    \setlength\itemsep{0.5pt}
-    \item First position in Titan slaying Hackathon (Team Levi)
-    \item 2.2k reputation on stack-exchange network.
-    \item First position in Sword fighting and aerial navigation.
+    \setlength\itemsep{2pt}
+    \item Competitive Programming
+    \item System Design Fundamentals
+    \item Learning Core Computer Science Concepts
 \end{itemize}
-\vspace{0pt}
 \end{contained}
-\sectionC{Interests and Hobbies}
-\begin{contained}\\
-\begin{itemize}
-\vspace{-8pt}
-    \setlength\itemsep{0.5pt}
-    \item Eren
-    \item ODM Gear
-    \item Reverse Engineering
-    \item \LaTeX
-\end{itemize}
-% \vspace{5pt}
-\end{contained}
-Declaration: The above information is correct to the best of my knowledge.\newline
-\yourname\newline
+
+\vspace{6pt}
+Declaration: The above information is true to the best of my knowledge.\\
+\yourname\\
 Date: \today
+
 \end{document}
